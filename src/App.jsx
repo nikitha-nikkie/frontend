@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-const API_URL = "http://localhost:8080/api/capsules";
+const API_URL = "https://timecapsule-backend-r0ed.onrender.com/api/capsules";
 
 function App() {
   const [title, setTitle] = useState("");
