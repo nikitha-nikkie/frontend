@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #342747;
+  background: #fcf8ff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 48px 20px 24px;
+  background:
+    radial-gradient(ellipse at 15% 5%, #f0e4ff 0, transparent 34%),
+    radial-gradient(ellipse at 90% 25%, #ffe8f0 0, transparent 30%),
+    #fcf8ff;
+}
+
+.hero {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 36px;
+}
+
+.hero-icon {
+  width: 70px;
+  height: 70px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+  border-radius: 24px;
+  background: white;
+  box-shadow: 0 10px 35px #8d69b526;
+  font-size: 34px;
+}
+
+.eyebrow {
+  color: #8a64ad;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  margin: 10px 0;
+  color: #533477;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(42px, 8vw, 64px);
+}
+
+.subtitle {
+  color: #786a88;
+  font-size: 16px;
+}
+
+.content {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.capsule-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #eee4f7;
+  border-radius: 24px;
+  box-shadow: 0 16px 50px #60437a12;
+}
+
+.capsule-form h2,
+.capsule-list h2 {
+  margin: 0;
+  color: #533477;
+  font-family: "Playfair Display", serif;
+  font-size: 26px;
+}
+
+.form-description,
+.list-heading p {
+  margin: 0 0 10px;
+  color: #897c96;
+  font-size: 14px;
+}
+
+.capsule-form label {
+  margin-top: 5px;
+  color: #554564;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.capsule-form input,
+.capsule-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #e6dceb;
+  border-radius: 11px;
+  outline: none;
+  color: #342747;
+  background: #fdfbff;
+}
+
+.capsule-form input:focus,
+.capsule-form textarea:focus {
+  border-color: #9a73c5;
+  box-shadow: 0 0 0 3px #a77ad51c;
+}
+
+.capsule-form textarea {
+  resize: vertical;
+}
+
+.file-name {
+  margin: 0;
+  color: #75549a;
+  font-size: 13px;
+}
+
+.primary-button,
+.secondary-button,
+.delete-button {
+  border: 0;
+  border-radius: 11px;
+  font-weight: 700;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.delete-button:hover {
+  transform: translateY(-1px);
+}
+
+.primary-button {
+  margin-top: 10px;
+  padding: 15px;
+  color: white;
+  background: linear-gradient(120deg, #8056b5, #b16fb5);
+  box-shadow: 0 8px 20px #9664b52b;
+}
+
+.message {
+  margin: 4px 0;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.error {
+  color: #a42b46;
+  background: #fff0f2;
+}
+
+.success {
+  color: #26734a;
+  background: #edfff4;
+}
+
+.capsule-list {
+  margin-top: 40px;
+}
+
+.list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.secondary-button {
+  padding: 10px 14px;
+  color: #65458a;
+  background: #efe5fa;
+}
+
+.empty-state {
+  padding: 28px 18px;
+  border: 1px dashed #d8c6e8;
+  border-radius: 16px;
+  color: #8a7a99;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.capsule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.capsule-card {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #eee4f7;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 8px 24px #60437a0c;
+}
+
+.card-icon {
+  font-size: 24px;
+}
+
+.capsule-card h3 {
+  color: #533477;
+  overflow-wrap: anywhere;
+}
+
+.capsule-message {
+  color: #65596f;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.capsule-detail {
+  color: #7f718c;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.delete-button {
+  margin-top: 8px;
+  padding: 9px 13px;
+  color: #a42b46;
+  background: #fff0f2;
+}
+
+footer {
+  margin-top: 45px;
+  color: #998ba4;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 30px 14px 20px;
+  }
+
+  .capsule-form {
+    padding: 21px 17px;
+  }
+
+  .list-heading {
+    align-items: flex-start;
+  }
+
+  .capsule-grid {
+    grid-template-columns: 1fr;
+  }
+}
